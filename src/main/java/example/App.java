@@ -19,5 +19,8 @@ public class App {
         System.out.println(Arrays.toString(a));
         QuickSort quickSort = new QuickSort();
         System.out.println(Arrays.toString(quickSort.sort(a)));
+        System.out.println("v2");
+        QuickSortV2 quickSortV2 = new QuickSortV2();
+        System.out.println(Arrays.toString(quickSortV2.sort(a)));;
     }
 }

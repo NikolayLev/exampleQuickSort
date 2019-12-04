@@ -1,6 +1,6 @@
 package example;
 
-public class A {
+public class A implements Comparable<A> {
 
     private int firstInt;
     private int secondInt;
@@ -32,5 +32,10 @@ public class A {
 
     public void setSecondInt(int secondInt) {
         this.secondInt = secondInt;
+    }
+
+    @Override
+    public int compareTo(A o) {
+        return (this.getFirstInt() + this.getSecondInt()) - (o.getFirstInt() + o.getSecondInt());
     }
 }
