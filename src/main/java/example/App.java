@@ -20,7 +20,7 @@ public class App {
         QuickSort quickSort = new QuickSort();
         System.out.println(Arrays.toString(quickSort.sort(a)));
         System.out.println("v2");
-        QuickSortV2 quickSortV2 = new QuickSortV2();
+        QuickSortV2<A> quickSortV2 = new QuickSortV2(A.class);//в конструктор передаем класс
         System.out.println(Arrays.toString(quickSortV2.sort(a)));;
     }
 }
